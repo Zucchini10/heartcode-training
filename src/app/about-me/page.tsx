@@ -1,10 +1,10 @@
-//import Image from "next/image";
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import Image from "next/image";
+import Naruto from "@/app/assets/naruto2.jpg";
 
 export default function AboutMe() {
   return (
-    <div>
+    <div className="p-5">
         Hello world this is the about me route
         <Card>
             <CardHeader>
@@ -16,15 +16,15 @@ export default function AboutMe() {
                 </CardDescription>
             </CardHeader>
             <CardContent>
+                <Image src={Naruto} alt="1"/>
                 <div className="flex flex-row gap-2">
                     <p className="font-bold">Name:</p>
-                    Nicholas
+                        Ryan
                 </div>
-                <div className="flex flex-row gap-2"><p className="font-bold">Major:</p>Information Systems</div>
+                <div className="flex flex-row gap-2"><p className="font-bold">Major:</p>Computer Science</div>
                 <div className="flex flex-row gap-2"><p className="font-bold">Hobbies:</p>I like to code</div>
             </CardContent>
         </Card>
     </div>
   );
 }
-  
